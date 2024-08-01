@@ -10,7 +10,7 @@ int main() {
 
     cout << fixed;
     cout.precision(2);
-    cout << c << endl << a << b;
+    cout << c << endl << a << endl << b;
 
     return 0;
 }
