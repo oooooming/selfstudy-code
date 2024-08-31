@@ -3,14 +3,8 @@ import java.util.Scanner;
 public class Main {
     public static void calGCD(int n, int m) {
         int a, b, r, gcd;
-        if(n<m) {
-            b = n;
-            a = m;
-        }
-        else {
-            b = m;
-            a = n;
-        }
+        b = Math.min(n, m);
+        a = Math.max(n, m);
 
         while(true) {
             r = a % b;
