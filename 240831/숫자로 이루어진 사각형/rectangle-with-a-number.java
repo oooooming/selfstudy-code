@@ -2,19 +2,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void printSquare(int n) {
-        int a = 1;
+        int cnt = 1;
 
         for(int i=0; i<n; i++) {
             for(int j=0; j<n; j++) {
-                if(a<10) {
-                    System.out.print(a + " ");
-                    a++;
-                }
-                else {
-                    a=1;
-                    System.out.print(a + " ");
-                    a++;
-                }
+                System.out.print(cnt + " ");
+                cnt++;
+                if(cnt == 10)
+                    cnt=1;
             }
             System.out.println();
         }
