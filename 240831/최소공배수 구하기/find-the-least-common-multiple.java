@@ -4,11 +4,12 @@ public class Main {
     public static void findLCD(int n, int m) {
         int a = Math.max(n, m);
         int b = Math.min(n, m);
-        int r, LCD;
+        int r, GCD, LCD;
         while(true) {
             r = a % b;
             if(r == 0) {
-               LCD = n*m/b;
+               GCD = b;
+               LCD = n*m/GCD;
                break;
             }
             a = b;
