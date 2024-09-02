@@ -6,8 +6,8 @@ public class Main {
     }
 
     public static boolean e369(int i) {
-        return i/10==3 || i/10==6 || i/10==9 || i
-        %10==3 || i%10==6 || i%10==9;
+        String s = Integer.toString(i);
+        return s.contains("3") || s.contains("6") || s.contains("9");
     }
 
     public static void main(String[] args) {
