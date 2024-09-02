@@ -15,6 +15,9 @@ public class Main {
             if(i%j==0)
                 return false;
         }
+        if(i==1)
+            return false;
+
         return true;
     }
     public static void main(String[] args) {
