@@ -30,6 +30,6 @@ public class Main {
         else if(o=='/')
             System.out.println(a + " " + o + " " + c + " = " + div(a, c));
         else
-            System.out.println("false");
+            System.out.println("False");
     }
 }
