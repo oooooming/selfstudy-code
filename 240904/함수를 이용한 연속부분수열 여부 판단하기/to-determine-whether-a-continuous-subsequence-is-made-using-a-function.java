@@ -4,12 +4,13 @@ public class Main {
     public static boolean consecutiveNum(int[] A, int[] B) {
         if(A.length > B.length){
             for(int i=0; i<A.length; i++) {
-                if(B[0] == A[i])
+                if(B[0] == A[i]){
                     for(int j=0; j<B.length; j++) {
                         if(B[j] != A[i+j])
                             return false;
                     }
                     return true;
+                }
             }
         }
         return false;
