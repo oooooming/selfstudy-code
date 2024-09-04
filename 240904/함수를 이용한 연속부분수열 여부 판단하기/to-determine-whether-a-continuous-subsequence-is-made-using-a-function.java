@@ -6,9 +6,10 @@ public class Main {
             for(int i=0; i<A.length; i++) {
                 if(B[0] == A[i])
                     for(int j=0; j<B.length; j++) {
-                        if(B[j] == A[i+j])
-                            return true;
+                        if(B[j] != A[i+j])
+                            return false;
                     }
+                    return true;
             }
         }
         return false;
