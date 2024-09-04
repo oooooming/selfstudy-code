@@ -2,12 +2,14 @@ import java.util.Scanner;
 
 public class Main {
     public static boolean consecutiveNum(int[] A, int[] B) {
-        for(int i=0; i<A.length; i++) {
-            if(B[0] == A[i])
-                for(int j=0; j<B.length; j++) {
-                    if(B[j] == A[i+j])
-                        return true;
-                }
+        if(A.length > B.length){
+            for(int i=0; i<A.length; i++) {
+                if(B[0] == A[i])
+                    for(int j=0; j<B.length; j++) {
+                        if(B[j] == A[i+j])
+                            return true;
+                    }
+            }
         }
         return false;
     }
