@@ -6,8 +6,8 @@ int main() {
     int s;
     cin >> s;
 
-    string result = (s=100) ? "pass" : "failure";
+    string result = (s==100) ? "pass" : "failure";
     cout << result;
-    
+
     return 0;
 }
