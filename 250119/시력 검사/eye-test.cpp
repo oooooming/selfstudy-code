@@ -8,7 +8,7 @@ int main() {
     cin >> b;
 
     if (a<0.5 && b<0.5) cout << "Low";
-    else if (a<1.0 && b<1.9) cout << "Middle";
+    else if (a<1.0 && b<1.0) cout << "Middle";
     else cout << "High";
     
     return 0;
