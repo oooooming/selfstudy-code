@@ -8,11 +8,17 @@ int main() {
 
     if (a<b) {
         if (b<c) cout << b;
-        else cout << c;
+        else {
+            if (a<c) cout << c;
+            else cout << a;
+        }
     }
     else {
         if (a<c) cout << a;
-        else cout << c;
+        else {
+            if (b>c) cout << b;
+            else cout << c;
+        }
     }
     
     return 0;
