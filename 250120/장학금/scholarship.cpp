@@ -7,7 +7,7 @@ int main() {
     cin >> m >> f;
 
     if (m>=90) {
-        if (f>=85) cout << 100000;
+        if (f>=95) cout << 100000;
         else if (f>=90) cout << 50000;
         else cout << 0;
     }
