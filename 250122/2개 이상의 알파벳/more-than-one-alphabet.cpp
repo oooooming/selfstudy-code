@@ -6,11 +6,11 @@ using namespace std;
 string A;
 
 void f(string &s) {
-    int cnt = 0;
-    for (int i = 0; i < (int)s.length(); i++) {
-        if (s[i]!=s[i+1]) cnt += 1;
+    bool flag = false;
+    for (int i = 0; i < (int)s.size(); i++) {
+        if (s[0]!=s[i]) flag = true;
     }
-    if (cnt!=0) cout << "Yes";
+    if (flag) cout << "Yes";
     else cout << "No";
 }
 
